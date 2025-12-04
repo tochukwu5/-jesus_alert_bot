@@ -4,7 +4,7 @@
   "type": "commonjs",
   "main": "monitor.js",
   "scripts": {
-    "start": "node monitor.js"
+    "start": "node api.js && node monitor.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "dotenv": "^17.2.3",
+    "express": "^5.2.1",
     "form-data": "^4.0.5",
     "node-fetch": "^2.7.0"
   }
