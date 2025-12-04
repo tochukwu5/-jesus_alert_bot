@@ -1,92 +1,61 @@
 Jesus Alert Bot
 
-Jesus Alert Bot is a cryptocurrency alert bot designed to notify users whenever the Dollar Jesus (JESUS) coin reaches certain market conditions, such as price targets, market cap milestones, or other custom thresholds. This bot helps traders and investors stay updated in real-time so they never miss an opportunity.
+Jesus Alert Bot notifies users when the Dollar Jesus (JESUS) coin hits price, market cap, or custom thresholds—keeping traders updated in real-time.
 
 Features
 
-Real-time alerts for the Dollar Jesus (JESUS) coin
+Real-time JESUS coin alerts
 
-Customizable thresholds (e.g., price, market cap, volume)
+Customizable thresholds (price, market cap, volume)
 
-Sends notifications via Telegram (or your preferred platform)
+Sends notifications via Telegram
 
 Lightweight and easy to deploy
 
-Automatic retries for missed updates
+Tech
 
-Technologies Used
+Node.js & JavaScript
 
-Node.js – server-side runtime
+Axios / node-fetch for API requests
 
-JavaScript – main programming language
+Telegram Bot API for alerts
 
-Axios / node-fetch – for API requests
-
-Telegram Bot API – for sending notifications (or another notification service)
-
-dotenv – secure environment variable management
+dotenv for environment variables
 
 Installation
-
-Clone the repository
-
-https://github.com/tochukwu5/-jesus_alert_bot.git
+git clone https://github.com/tochukwu5/-jesus_alert_bot.git
 cd jesus-alert-bot
-
-
-Install dependencies
-
 npm install
 
 
-Set up environment variables
-Create a .env file in the root directory:
+Create a .env file:
 
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 CHAT_ID=your_chat_id
-ALERT_PRICE=0.0001   # Example: target price in USD
-ALERT_MARKETCAP=500000 # Example: target market cap in USD
+ALERT_PRICE=0.0001
+ALERT_MARKETCAP=500000
 
 
-⚠️ Do not commit your .env file to GitHub. Keep your API keys safe.
+⚠️ Do not commit .env to GitHub.
 
 Usage
-
-Run the bot:
-
 node monitor.js
 
 
-Once running, the bot will:
-
-Monitor the JESUS coin continuously
-
-Send an alert to your Telegram chat when your conditions are met
-
-You can also set this up with a process manager like PM2 to run continuously in the background:
+Optional (run continuously):
 
 npm install -g pm2
 pm2 start monitor.js --name "jesus-alert-bot"
 
 Contributing
 
-Contributions are welcome! You can:
-
-Add new alert conditions
-
-Integrate additional notification platforms
-
-Improve performance and reliability
-
-Please fork the repository and create a pull request with your changes.
+Fork the repo and submit pull requests. Contributions to alerts, notifications, or performance are welcome.
 
 License
 
-This project is licensed under the MIT License.
+MIT License
 
 Contact
-
-For questions or support:
 
 Author: David Emeremgini
 
@@ -94,4 +63,4 @@ Portfolio: daviwork.vercel.app
 
 Email: tochukwud750@gmail.com
 
-✅ Note: This bot is for informational purposes only. Trading cryptocurrencies carries risk, and you should do your own research before making financial decisions.
+⚠️ Informational only. Crypto trading is risky. Do your research before trading.
