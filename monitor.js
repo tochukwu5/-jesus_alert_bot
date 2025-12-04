@@ -1,3 +1,22 @@
+const express = require('express');
+const app = express();
+
+// Use the port from Render or default to 3000
+const PORT = process.env.PORT || 3000;
+
+// Health check route
+app.get('/', (req, res) => {
+  res.send('Jesus Alert Bot is running!');
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
+
+// --- Your existing bot code continues here ---
+
+
 // monitor.js (CommonJS - cleaned & improved)
 const fetch = require("node-fetch");
 require("dotenv").config();
